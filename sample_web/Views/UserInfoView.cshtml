@@ -1,0 +1,26 @@
+﻿@model sample_web.Models.UserInfoViewModel
+
+@{
+    ViewBag.Title = "UserInfoView";
+}
+
+<h2>UserInfoView</h2>
+
+@using (Html.BeginForm())
+{
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Birthday</th>
+        </tr>
+        @foreach (var d in Model.grid)
+        {
+            <tr>
+                <td>d.id</td>
+                <td>d.username</td>
+                <td>d.birthday</td>
+            </tr>
+        }
+    </table>
+}

@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm(
+    "HelloView", // アクション名（メソッド名）
+    "Hello"  // コントローラ名（Controllerは要らない）
+))
+{
+    <label>Hello Viewにいくでー</label>
+    <input type="submit" value="POST送信" />
+}

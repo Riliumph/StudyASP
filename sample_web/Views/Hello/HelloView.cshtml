@@ -1,0 +1,11 @@
+﻿@model sample_web.Models.HelloModel
+@{
+    ViewBag.Title = "HelloView";
+}
+
+<h2>HelloView</h2>
+
+@Html.TextBoxFor(a => a.str1)
+@Html.TextBoxFor(a => a.str2)
+
+@Html.ActionLink("ユーザー情報画面", "UserInfo", "UserInfo")
